@@ -42,10 +42,9 @@ plugins:
 targets:
   my-db:
     database: neo4j
-    database_name: neo4j
-    password: yourPassword
     uri: bolt://localhost:7687
     username: neo4j
+    password: yourPassword
 ```
 
 ## Preparing the database with Nodestream Migrations 
@@ -54,7 +53,7 @@ targets:
 - ```nodestream migrations run --target my-db```
 
 
-## Run the Pipeline
+## Run the Pipelines
 
 - ```nodestream run gcpAsset --target my-db```
 
