@@ -6,7 +6,7 @@
   arguments:
     interpretations:
       - type: source_node
-        node_type: GcpAsset
+        node_type: Resource
         key:
           name: !jmespath 'name'
         properties:

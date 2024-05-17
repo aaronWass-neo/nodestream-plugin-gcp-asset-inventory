@@ -6,12 +6,16 @@
   arguments:
     interpretations:
       - type: source_node
-        node_type: Member
+        node_type: Principal
         key:
           name: !jmespath 'member_name'
+        properties:
+          tag: !jmespath 'tag'
       - type: relationship
-        node_type: GcpAsset
-        relationship_type: !jmespath 'role'
+        node_type: GcpResource
+        relationship_type: HAS_BINDING
         node_key: 
           name: !jmespath 'asset_name'
+        relationship_properties:
+          role: !jmespath 'role'
 
