@@ -47,7 +47,7 @@ targets:
     password: yourPassword
 ```
 
-## Preparing the database with Nodestream Migrations 
+## Prepare the database with Nodestream Migrations 
 - ```nodestream migrations make``` 
 
 - ```nodestream migrations run --target my-db```
