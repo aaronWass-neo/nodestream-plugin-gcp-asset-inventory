@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "nodestream-plugin-gcp-asset-inventory"
-version = "0.1.4"
+version = "0.1.5"
 description = "nodestream plugin for GCP Asset Inventory"
 authors = ["Aaron Wasserman <aaron.wasserman@neo4j.com>"]
 readme = "README.md"

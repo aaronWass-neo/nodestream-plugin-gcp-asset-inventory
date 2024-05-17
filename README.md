@@ -10,8 +10,7 @@ This repo contains a [Nodestream](https://nodestream-proj.github.io/docs/docs/in
 ## Getting Started
 
 ## Setup Neo4j 
-- You can create an Aura instance [here](https://console.neo4j.io)
-- or 
+- You can create an Aura instance [here](https://console.neo4j.io) or, 
 - You can run Neo4j in a docker container like this: 
 ```
 docker run \
@@ -26,10 +25,11 @@ docker run \
 - Follow documentation [here](https://cloud.google.com/docs/authentication/provide-credentials-adc) to authenticate to Google Cloud
 
 ## Install Nodestream 
-``` pip install nodestream```
+- ``` pip install nodestream```
 
-## Install Nodestream Plugin 
-``` pip install nodestream-plugin-gcp-asset-inventory```
+## Install Nodestream Plugins
+- ``` pip install nodestream-plugin-neo4j```
+- ``` pip install nodestream-plugin-gcp-asset-inventory```
 
 ## Configure Nodestream  
 - Add the following to nodestream.yaml
@@ -58,3 +58,10 @@ targets:
 - ```nodestream run gcpAsset --target my-db```
 
 - ```nodestream run gcpPolicy --target my-db```
+
+
+## Visualize and Explore your Asset Network 
+
+Explore in [Neo4j Aura](https://console.neo4j.io) allows you to easily explore the Asset graph you just built. 
+
+![aura screenshot](./imgs/AuraScreenshot.png)
